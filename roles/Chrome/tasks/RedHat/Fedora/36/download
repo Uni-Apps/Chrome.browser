@@ -9,6 +9,6 @@
   dnf:
     name: /tmp/google-chrome-stable_current_x86_64.rpm
     state: present
-#    disable_gpg_check: yes
+    disable_gpg_check: yes
   become: true
 
