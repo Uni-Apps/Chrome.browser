@@ -1,8 +1,10 @@
 ---
 
+- include_tasks: "{{role_path}}/tasks/common/create app_dir"
+
 - get_url:
     url: https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
-    dest: /tmp/
+    dest: "{{app_dir}}/"
 #    checksum: "sha256:{{ rpm_checksum_sha256 }}"
 
 - name: Install Google Chrome
@@ -11,4 +13,3 @@
     state: present
     disable_gpg_check: yes
   become: true
-

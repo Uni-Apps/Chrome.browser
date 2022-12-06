@@ -1,0 +1,9 @@
+---
+
+- name: Create Apps directory
+  become: true
+  ansible.builtin.file:
+    path: "{{app_dir}}"
+    state: directory
+    owner: "{{ansible_user}}"
+    group: "{{ansible_user}}"

@@ -1,7 +1,0 @@
-# template files
-ln -srf ansible.cfg ..
-ln -srf uni ..
-
-# user
-cp test/inventory/hosts.template test/inventory/hosts
-sed -i "s/ansible_user=me/ansible_user=$USER/" test/inventory/hosts
