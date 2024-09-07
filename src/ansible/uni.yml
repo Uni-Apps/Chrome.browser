@@ -1,5 +1,4 @@
 ---
 - hosts: localhost
-
   roles:
-  - role: Google-Chrome
+  - UniInc.Google-Chrome
